@@ -6,7 +6,7 @@ phases:
       - echo Connecting to Amazon ECR...
       - aws --version
       # - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-      - aws ecr get-login-password --region ap-southeast-1 | docker login
+      - aws ecr get-login-password --region ap-northeast-1 | docker login
         --username AWS --password-stdin
         654654533972.dkr.ecr.ap-northeast-1.amazonaws.com/hello-ecr
       - REPOSITORY_URI=654654533972.dkr.ecr.ap-northeast-1.amazonaws.com/hello-ecr
